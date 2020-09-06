@@ -51,10 +51,6 @@ train_data = train_generator(newDf,newTemp,newRain,newTrend, timesteps, date(201
 Xval, Yval = create_dataset(newDf, newTemp,newRain,newTrend, timesteps, date(2019, 6,30))
 Xtest, _= create_dataset(newDf, newTemp,newRain,newTrend, timesteps, date(2019, 7,28))
 
-
-
-
-
 ###### 모델 파라미터 설정
 filterN=16
 layerN=16
@@ -63,8 +59,6 @@ dr=0.3
 ## 모델 불러오기
 from conv1d import makeModel
 model=makeModel(filterN,layerN,dr,timesteps)
-
-
 
 lr=0.0002
 steps_per_epoch=40
