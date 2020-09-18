@@ -47,7 +47,7 @@ from util import create_dataset
 from util import train_generator
 
 timesteps = 52
-train_data = train_generator(newDf,newTemp,newRain,newTrend, timesteps, date(2019, 6, 2),n_range=36, batch_size=30)
+train_data = train_generator(newDf,newTemp,newRain,newTrend, timesteps, date(2019, 6, 2),n_range=40, batch_size=30)
 Xval, Yval = create_dataset(newDf, newTemp,newRain,newTrend, timesteps, date(2019, 6,30))
 Xtest, _= create_dataset(newDf, newTemp,newRain,newTrend, timesteps, date(2019, 7,28))
 
