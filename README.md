@@ -10,6 +10,7 @@
 - 네이버 검색량 데이터: naver_trend.csv
 ## 3. 코드
 - [conv1d.py](https://github.com/donusKim/Sales_Forecasting/blob/master/conv1d.py)
+   - asdaskldjasdaskldjl
 - [preprocess.py](https://github.com/donusKim/Sales_Forecasting/blob/master/preprocess.py)
 - [util.py](https://github.com/donusKim/Sales_Forecasting/blob/master/util.py)
 - [main.py](https://github.com/donusKim/Sales_Forecasting/blob/master/main.py)
