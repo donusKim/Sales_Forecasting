@@ -10,8 +10,10 @@
 - 네이버 검색량 데이터: naver_trend.csv
 ## 3. 코드
 - [conv1d.py](https://github.com/donusKim/Sales_Forecasting/blob/master/conv1d.py)
-   - asdaskldjasdaskldjl
+   - conv1d모델에 관한 코드
 - [preprocess.py](https://github.com/donusKim/Sales_Forecasting/blob/master/preprocess.py)
+   - 전처리함수에 대한 코드
 - [util.py](https://github.com/donusKim/Sales_Forecasting/blob/master/util.py)
+   - 훈련데이터셋을 만드는 코드
 - [main.py](https://github.com/donusKim/Sales_Forecasting/blob/master/main.py)
-
+   - 데이터 불러오기,전처리,학습,추론이 이뤄지는 main 코드
