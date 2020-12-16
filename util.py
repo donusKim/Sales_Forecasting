@@ -17,18 +17,18 @@ def create_dataset(df,temp,rain,trend, timesteps, pred_start, is_train=True):
     brand_mean, _ = create_xy_span(brand_mean_df, pred_start, timesteps, False)
     point_mean, _ = create_xy_span(point_mean_df, pred_start, timesteps, False)
     
-    yearAgo, _ = create_xy_span(df, pred_start-timedelta(weeks=52), timesteps+4, False)
-    quarterAgo, _ = create_xy_span(df, pred_start-timedelta(weeks=13), timesteps+4, False)
+    year_ago, _ = create_xy_span(df, pred_start-timedelta(weeks=52), timesteps+4, False)
+    quarter_ago, _ = create_xy_span(df, pred_start-timedelta(weeks=13), timesteps+4, False)
 
     rain = rain.reshape(-1, timesteps, 1)
     temp = temp.reshape(-1, timesteps, 1)
     trend = trend.reshape(-1, timesteps, 1)    
     brand_mean = brand_mean.reshape(-1, timesteps, 1)
     point_mean = point_mean.reshape(-1, timesteps, 1)
-    yearAgo = yearAgo.reshape(-1, timesteps+4, 1)
-    quarterAgo = quarterAgo.reshape(-1, timesteps+4, 1)
+    year_ago = year_ago.reshape(-1, timesteps+4, 1)
+    quarter_ago = quarter_ago.reshape(-1, timesteps+4, 1)
 
-    return ([X,temp,rain, trend, yearAgo, quarterAgo,brand_mean, point_mean], y)
+    return ([X,temp,rain, trend, year_ago, quarter_ago,brand_mean, point_mean], y)
 
 
 def train_generator(df,temp,rain,trend, timesteps, first_pred_start,
