@@ -1,17 +1,17 @@
-import sys
-import os
 import argparse
+import os
+from datetime import date
+
 import numpy as np
 import pandas as pd
-from keras.layers import *
 from keras import optimizers
-from datetime import date
+
+from conv1d import makeModel
 from preprocess import main_preprocess
-from preprocess import weather_preprocess
 from preprocess import trend_preprocess
+from preprocess import weather_preprocess
 from util import create_dataset
 from util import train_generator
-from conv1d import makeModel
 
 if __name__ == '__main__':
     # 인자 받기
