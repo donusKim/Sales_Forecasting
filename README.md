@@ -1,5 +1,9 @@
 # Sales_Forecasting
 ## 1. 필요한 패키지
+[Requirements.txt](https://github.com/donusKim/Sales_Forecasting/blob/master/requirements.txt)   
+`pip install -r requirements.txt`
+- [Pandas](https://pandas.pydata.org/) - 2.3.1 이상의 version
+- [Numpy](https://numpy.org/) - 2.0.0 이상의 version
 - [Keras](https://keras.io/ko/) - 2.3.1 이상의 version
 - [Tensorflow](https://www.tensorflow.org/?hl=ko) - 2.0.0 이상의 version
 ## 2. 데이터

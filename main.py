@@ -35,11 +35,11 @@ if __name__ == '__main__':
     epochs = args.epochs
 
     ## Csv파일 불러오기
-    df = pd.read_csv("purchase_data.csv", encoding="ms949")
-    temp = pd.read_csv("temp.csv", encoding="ms949").set_index(["지점"])
-    rain = pd.read_csv("rain.csv", encoding="ms949").set_index(["지점"])
-    point = pd.read_csv("point_table.csv", encoding="ms949").set_index(["point_name"])
-    trend = pd.read_csv("naver_trend.csv")
+    df = pd.read_csv("data/purchase_data.csv", encoding="ms949")
+    temp = pd.read_csv("data/temp.csv", encoding="ms949").set_index(["지점"])
+    rain = pd.read_csv("data/rain.csv", encoding="ms949").set_index(["지점"])
+    point = pd.read_csv("data/point_table.csv", encoding="ms949").set_index(["point_name"])
+    trend = pd.read_csv("data/naver_trend.csv")
 
     ## Drop
     temp.drop("160", axis=1, inplace=True)
